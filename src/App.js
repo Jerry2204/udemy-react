@@ -1,17 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import './Custom.css';
 
 function App() {
-  return (
-    <div>
-      <ul>
-        <li>Amy</li>
-        <li>Ben</li>
-        <li>Charles</li>
-        <li>Lappet</li>
-      </ul>
-    </div>
-  );
-}
 
-export default App;
+  const styles = {
+      outerDiv: {
+        padding: '70px 0',
+        backgroundColor: 'blue'
+    },
+    innerDiv: {
+      textAlign: "center",
+      margin: "auto",
+      width: "60%",
+      border: "3px solid black",
+      backgroundColor: "#73AD21",
+      padding: '70px 0'
+    }
+  }
+
+  return (
+    <div style={styles.outerDiv}>
+      <div style={styles.innerDiv}>Style Inline</div>
+    </div>
+    );
+  }
+
+  export default App;
